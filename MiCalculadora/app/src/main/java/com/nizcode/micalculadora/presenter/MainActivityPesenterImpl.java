@@ -11,7 +11,7 @@ public class MainActivityPesenterImpl implements MainActivityPresenter {
 
     public MainActivityPesenterImpl(MainActivityView activityView) {
         this.activityView = activityView;
-        interactor = new MainActivityINteractorImpl();
+        interactor = new MainActivityINteractorImpl(this);
     }
 
     @Override
